@@ -1,0 +1,196 @@
+import type { Issue } from "../types"
+
+export const issues: Issue[] = [
+  {
+    id: "iss-001",
+    title: "Leaking kitchen tap",
+    description:
+      "The kitchen tap has been dripping constantly. Tenant reports water pooling under the sink cabinet.",
+    status: "in-progress",
+    priority: "high",
+    propertyId: "prop-001",
+    assignedWorkerIds: ["wk-001"],
+    comments: [
+      {
+        id: "com-001",
+        authorName: "Alex Morgan",
+        text: "Contacted the tenant to schedule access. Plumber booked for Thursday.",
+        photoUrls: [],
+        createdAt: "2026-03-10T09:30:00Z",
+      },
+      {
+        id: "com-002",
+        authorName: "Alex Morgan",
+        text: "Plumber visited — needs a replacement valve. Part ordered, return visit next week.",
+        photoUrls: [],
+        createdAt: "2026-03-14T16:00:00Z",
+      },
+    ],
+    createdAt: "2026-03-08T10:00:00Z",
+    updatedAt: "2026-03-14T16:00:00Z",
+  },
+  {
+    id: "iss-002",
+    title: "Broken intercom buzzer",
+    description:
+      "Intercom system for the main entrance is not working. Visitors cannot buzz the flat.",
+    status: "open",
+    priority: "medium",
+    propertyId: "prop-001",
+    assignedWorkerIds: [],
+    comments: [],
+    createdAt: "2026-03-20T08:00:00Z",
+    updatedAt: "2026-03-20T08:00:00Z",
+  },
+  {
+    id: "iss-003",
+    title: "Boiler pressure dropping",
+    description:
+      "Boiler pressure gauge keeps falling below 1 bar. Needs re-pressurising or repair.",
+    status: "assigned",
+    priority: "high",
+    propertyId: "prop-002",
+    assignedWorkerIds: ["wk-001"],
+    comments: [
+      {
+        id: "com-003",
+        authorName: "Alex Morgan",
+        text: "Tom Baker scheduled to inspect on Monday.",
+        photoUrls: [],
+        createdAt: "2026-03-18T10:00:00Z",
+      },
+    ],
+    createdAt: "2026-03-17T11:00:00Z",
+    updatedAt: "2026-03-18T10:00:00Z",
+  },
+  {
+    id: "iss-004",
+    title: "Damp patch on bedroom ceiling",
+    description:
+      "Growing damp patch in the master bedroom. Could be a roof leak or condensation issue.",
+    status: "reviewing",
+    priority: "urgent",
+    propertyId: "prop-003",
+    assignedWorkerIds: ["wk-005", "wk-003"],
+    comments: [
+      {
+        id: "com-004",
+        authorName: "Alex Morgan",
+        text: "Roofer and maintenance worker both sent out. Roof tile displacement confirmed.",
+        photoUrls: [],
+        createdAt: "2026-03-05T14:00:00Z",
+      },
+      {
+        id: "com-005",
+        authorName: "Alex Morgan",
+        text: "Tiles replaced and sealed. Monitoring for 2 weeks before closing.",
+        photoUrls: [],
+        createdAt: "2026-03-12T09:00:00Z",
+      },
+    ],
+    createdAt: "2026-03-01T09:00:00Z",
+    updatedAt: "2026-03-12T09:00:00Z",
+  },
+  {
+    id: "iss-005",
+    title: "Power outlet not working in living room",
+    description:
+      "Double socket near the TV unit has stopped working. No power from either outlet.",
+    status: "completed",
+    priority: "medium",
+    propertyId: "prop-004",
+    assignedWorkerIds: ["wk-002"],
+    comments: [
+      {
+        id: "com-006",
+        authorName: "Alex Morgan",
+        text: "Electrician found a tripped circuit. Reset and tested — all working now.",
+        photoUrls: [],
+        createdAt: "2026-03-10T11:00:00Z",
+      },
+    ],
+    createdAt: "2026-03-08T14:00:00Z",
+    updatedAt: "2026-03-10T11:00:00Z",
+  },
+  {
+    id: "iss-006",
+    title: "Front door lock sticking",
+    description:
+      "Tenant reports the front door lock is very stiff and sometimes the key gets stuck.",
+    status: "assigned",
+    priority: "medium",
+    propertyId: "prop-004",
+    assignedWorkerIds: ["wk-006"],
+    comments: [],
+    createdAt: "2026-03-22T10:00:00Z",
+    updatedAt: "2026-03-22T10:00:00Z",
+  },
+  {
+    id: "iss-007",
+    title: "Guttering overflow during rain",
+    description:
+      "Gutters overflow at the front of the house during heavy rain, splashing onto the front path.",
+    status: "open",
+    priority: "low",
+    propertyId: "prop-005",
+    assignedWorkerIds: [],
+    comments: [],
+    createdAt: "2026-03-19T09:00:00Z",
+    updatedAt: "2026-03-19T09:00:00Z",
+  },
+  {
+    id: "iss-008",
+    title: "Fire escape door not closing properly",
+    description:
+      "The fire escape door on the second floor does not latch shut. Compliance risk for HMO.",
+    status: "in-progress",
+    priority: "urgent",
+    propertyId: "prop-006",
+    assignedWorkerIds: ["wk-003", "wk-002"],
+    comments: [
+      {
+        id: "com-007",
+        authorName: "Alex Morgan",
+        text: "Door closer mechanism is faulty. Replacement part sourced — fitting tomorrow.",
+        photoUrls: [],
+        createdAt: "2026-03-21T15:00:00Z",
+      },
+    ],
+    createdAt: "2026-03-20T08:30:00Z",
+    updatedAt: "2026-03-21T15:00:00Z",
+  },
+  {
+    id: "iss-009",
+    title: "Bathroom extractor fan noisy",
+    description:
+      "The extractor fan in the shared bathroom is making a loud grinding noise.",
+    status: "open",
+    priority: "low",
+    propertyId: "prop-006",
+    assignedWorkerIds: [],
+    comments: [],
+    createdAt: "2026-03-24T10:00:00Z",
+    updatedAt: "2026-03-24T10:00:00Z",
+  },
+  {
+    id: "iss-010",
+    title: "Garden fence panel blown down",
+    description:
+      "Rear garden fence panel has blown down in recent storms. Needs replacing.",
+    status: "closed",
+    priority: "low",
+    propertyId: "prop-008",
+    assignedWorkerIds: ["wk-003"],
+    comments: [
+      {
+        id: "com-008",
+        authorName: "Alex Morgan",
+        text: "New panel fitted and secured. Landlord invoiced.",
+        photoUrls: [],
+        createdAt: "2026-02-28T12:00:00Z",
+      },
+    ],
+    createdAt: "2026-02-20T09:00:00Z",
+    updatedAt: "2026-02-28T12:00:00Z",
+  },
+]

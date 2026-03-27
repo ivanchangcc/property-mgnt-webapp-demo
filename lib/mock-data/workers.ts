@@ -1,0 +1,58 @@
+import type { Worker } from "../types"
+
+export const workers: Worker[] = [
+  {
+    id: "wk-001",
+    firstName: "Tom",
+    lastName: "Baker",
+    email: "tom.baker@repairs.co.uk",
+    phone: "+44 7700 300001",
+    specialties: ["plumbing", "heating"],
+    available: true,
+  },
+  {
+    id: "wk-002",
+    firstName: "Rachel",
+    lastName: "Green",
+    email: "rachel.green@repairs.co.uk",
+    phone: "+44 7700 300002",
+    specialties: ["electrical", "fire safety"],
+    available: true,
+  },
+  {
+    id: "wk-003",
+    firstName: "Ahmed",
+    lastName: "Hassan",
+    email: "ahmed.hassan@repairs.co.uk",
+    phone: "+44 7700 300003",
+    specialties: ["general maintenance", "carpentry"],
+    available: false,
+  },
+  {
+    id: "wk-004",
+    firstName: "Lisa",
+    lastName: "Wang",
+    email: "lisa.wang@repairs.co.uk",
+    phone: "+44 7700 300004",
+    specialties: ["painting", "decorating"],
+    available: true,
+  },
+  {
+    id: "wk-005",
+    firstName: "Mike",
+    lastName: "O'Brien",
+    email: "mike.obrien@repairs.co.uk",
+    phone: "+44 7700 300005",
+    specialties: ["roofing", "guttering"],
+    available: true,
+  },
+  {
+    id: "wk-006",
+    firstName: "Yuki",
+    lastName: "Tanaka",
+    email: "yuki.tanaka@repairs.co.uk",
+    phone: "+44 7700 300006",
+    specialties: ["locksmith", "security systems"],
+    available: true,
+  },
+]

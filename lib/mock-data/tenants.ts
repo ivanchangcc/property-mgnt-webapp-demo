@@ -1,0 +1,88 @@
+import type { Tenant } from "../types"
+
+export const tenants: Tenant[] = [
+  {
+    id: "ten-001",
+    firstName: "Oliver",
+    lastName: "Brown",
+    email: "oliver.brown@email.co.uk",
+    phone: "+44 7700 200001",
+  },
+  {
+    id: "ten-002",
+    firstName: "Amara",
+    lastName: "Diallo",
+    email: "amara.diallo@email.co.uk",
+    phone: "+44 7700 200002",
+  },
+  {
+    id: "ten-003",
+    firstName: "Liam",
+    lastName: "Murphy",
+    email: "liam.murphy@email.co.uk",
+    phone: "+44 7700 200003",
+  },
+  {
+    id: "ten-004",
+    firstName: "Sophie",
+    lastName: "Taylor",
+    email: "sophie.taylor@email.co.uk",
+    phone: "+44 7700 200004",
+  },
+  {
+    id: "ten-005",
+    firstName: "Noah",
+    lastName: "Williams",
+    email: "noah.williams@email.co.uk",
+    phone: "+44 7700 200005",
+  },
+  {
+    id: "ten-006",
+    firstName: "Priya",
+    lastName: "Patel",
+    email: "priya.patel@email.co.uk",
+    phone: "+44 7700 200006",
+  },
+  {
+    id: "ten-007",
+    firstName: "Jack",
+    lastName: "Robinson",
+    email: "jack.robinson@email.co.uk",
+    phone: "+44 7700 200007",
+  },
+  {
+    id: "ten-008",
+    firstName: "Chloe",
+    lastName: "Evans",
+    email: "chloe.evans@email.co.uk",
+    phone: "+44 7700 200008",
+  },
+  {
+    id: "ten-009",
+    firstName: "Marcus",
+    lastName: "Johnson",
+    email: "marcus.johnson@email.co.uk",
+    phone: "+44 7700 200009",
+  },
+  {
+    id: "ten-010",
+    firstName: "Fatima",
+    lastName: "Khan",
+    email: "fatima.khan@email.co.uk",
+    phone: "+44 7700 200010",
+  },
+  {
+    id: "ten-011",
+    firstName: "George",
+    lastName: "Hall",
+    email: "george.hall@email.co.uk",
+    phone: "+44 7700 200011",
+  },
+  {
+    id: "ten-012",
+    firstName: "Lucy",
+    lastName: "Wright",
+    email: "lucy.wright@email.co.uk",
+    phone: "+44 7700 200012",
+  },
+]

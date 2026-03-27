@@ -1,0 +1,46 @@
+import type { Landlord } from "../types"
+
+export const landlords: Landlord[] = [
+  {
+    id: "ll-001",
+    firstName: "James",
+    lastName: "Whitfield",
+    email: "james.whitfield@email.co.uk",
+    phone: "+44 7700 100001",
+    company: "Whitfield Estates",
+    address: "12 King's Road, Chelsea, London SW3 4ND",
+    propertyIds: ["prop-001", "prop-002", "prop-003"],
+    createdAt: "2023-06-15T10:00:00Z",
+  },
+  {
+    id: "ll-002",
+    firstName: "Sarah",
+    lastName: "Okonkwo",
+    email: "sarah.okonkwo@email.co.uk",
+    phone: "+44 7700 100002",
+    address: "45 Park Lane, Mayfair, London W1K 1PN",
+    propertyIds: ["prop-004", "prop-005"],
+    createdAt: "2023-09-20T14:30:00Z",
+  },
+  {
+    id: "ll-003",
+    firstName: "David",
+    lastName: "Chen",
+    email: "david.chen@email.co.uk",
+    phone: "+44 7700 100003",
+    company: "Chen Property Group",
+    address: "8 Victoria Street, Westminster, London SW1H 0NJ",
+    propertyIds: ["prop-006", "prop-007"],
+    createdAt: "2024-01-10T09:00:00Z",
+  },
+  {
+    id: "ll-004",
+    firstName: "Emily",
+    lastName: "Hargreaves",
+    email: "emily.hargreaves@email.co.uk",
+    phone: "+44 7700 100004",
+    address: "22 Elm Grove, Didsbury, Manchester M20 6PD",
+    propertyIds: ["prop-008"],
+    createdAt: "2024-03-05T11:00:00Z",
+  },
+]
