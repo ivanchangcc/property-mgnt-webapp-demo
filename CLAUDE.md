@@ -36,6 +36,8 @@ Property management web app for UK property managers. Next.js 16 App Router + Re
 
 **All pages import from `@/lib/mock-data` — never directly from individual data files.**
 
+Mock data IDs use prefixed formats: `prop-001`, `iss-001`, `cert-001`, `landlord-001`, `worker-001`. Use these when building links or navigating to detail pages (e.g. `/issues/iss-001`).
+
 ### Key Domain Relationships
 
 - 1 Landlord → N Properties (via `landlordId` on Property)
@@ -47,7 +49,7 @@ Property management web app for UK property managers. Next.js 16 App Router + Re
 
 ### Component Patterns
 
-- `components/glass-card.tsx` — Glassmorphism card wrapper (backdrop-blur, semi-transparent). Used throughout for the frosted-glass UI style. Three intensity levels: light/medium/strong.
+- `components/glass-card.tsx` — Card wrapper with `bg-card border` styling. Accepts an `intensity` prop (light/medium/strong) reserved for future use; currently all intensities render identically.
 - `components/stat-card.tsx`, `status-badge.tsx`, `priority-badge.tsx`, `cert-status-indicator.tsx` — Domain-specific display components built on Shadcn Badge/Card
 - `components/ui/` — Shadcn components (do not modify directly; add new ones via `npx shadcn@latest add`)
 - `components/page-header.tsx` — Consistent page header with SidebarTrigger for mobile
@@ -58,6 +60,10 @@ Property management web app for UK property managers. Next.js 16 App Router + Re
 - List pages and dashboard are **Client Components** (search/filter state via `useState`)
 - Static detail pages (landlord, property) use `generateStaticParams` for **SSG**
 - Issue detail (`/issues/[id]`) is a **Client Component** with ephemeral state for status changes, worker assignment, and comments (mutations don't persist across page loads)
+
+## Design
+
+Figma source file: `https://www.figma.com/design/GywkYFF6cV8gyRG8lhH1XX/Property-Mgnt-Web-App-Demo`
 
 ## Code Style
 
